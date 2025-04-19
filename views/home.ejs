@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OAuth Login</title>
+  <style>
+    .google-btn {
+      display: inline-flex;
+      align-items: center;
+      background-color: white;
+      color: #444;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      padding: 10px 15px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .google-btn:hover {
+      background-color: #f7f7f7;
+    }
+
+    .google-icon-wrapper {
+      margin-right: 10px;
+    }
+
+    .google-icon {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to OAuth Login App</h1>
+  <% if (!user) { %>
+
+  <a href="/auth/google" class="google-btn">
+    <div class="google-icon-wrapper">
+      <img class="google-icon" src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo">
+    </div>
+    <span>Sign in with Google</span>
+  </a>
+  <% } else { %>
+    <p>Welcome, <%= user.displayName %>!</p>
+    <a href="/auth/logout">Logout</a>
+  <% } %>
+</body>
+</html>
