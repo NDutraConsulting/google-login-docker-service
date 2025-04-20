@@ -2,6 +2,9 @@
 
 Google Login Service manages users profiles and user access.
 
+## Environment Setup
+Use .gitignore to hide your produciton configurations
+
 ## Run Docker for Development
 
 ```bash
@@ -12,6 +15,7 @@ docker-compose up --build
 ```bash
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build -d
 ```
+
 
 
 
