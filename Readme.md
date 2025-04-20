@@ -1,6 +1,6 @@
-# User Service
+# Google Login Service
 
-ABX User Service manages users profiles and user access.
+Google Login Service manages users profiles and user access.
 
 ## Run Docker for Development
 
