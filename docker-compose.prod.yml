@@ -3,8 +3,6 @@ version: '3.8'
 services:
   app:
     command: ["node", "app.js"]
-    volumes:
-      - .:/usr/src/app
     environment:
       - NODE_ENV=production
     ports:
