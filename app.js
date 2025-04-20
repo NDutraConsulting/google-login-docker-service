@@ -22,9 +22,10 @@ app.get('/', (req, res) => {
   res.render('home', { user: req.user });
 });
 
-app.get("/tip", 
+app.get("/debug", 
   function(req, res) {
-    let msg = "tip login";
+    let msg = "Debug login - process.env.GOOGLE_CLIENT_SECRET: "+process.env.GOOGLE_CLIENT_SECRET;
+    
     return res.send(msg);
 });
 

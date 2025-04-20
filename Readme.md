@@ -1,0 +1,25 @@
+# User Service
+
+ABX User Service manages users profiles and user access.
+
+## Run Docker for Development
+
+```bash
+docker-compose up --build
+```
+
+## Run Docker for Production
+```bash
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build -d
+```
+
+
+
+## Contributing
+
+This is a project template. 
+Feel free to use this to start your own project.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
