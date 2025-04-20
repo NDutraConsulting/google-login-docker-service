@@ -4,6 +4,7 @@ const passport = require('passport');
 require('./auth/google');
 
 const authRoutes = require('./routes/authRoutes');
+const config = require('./configLoader');
 
 const app = express();
 app.set('view engine', 'ejs');
@@ -24,8 +25,9 @@ app.get('/', (req, res) => {
 
 app.get("/debug", 
   function(req, res) {
-    let msg = "Debug login - process.env.GOOGLE_CLIENT_SECRET: "+process.env.GOOGLE_CLIENT_SECRET;
-    
+
+    let msg = "Debug login - process.env.NODE_ENV: "+process.env.NODE_ENV+" - config.SESSION_SECRET: "+config.SESSION_SECRET;
+
     return res.send(msg);
 });
 

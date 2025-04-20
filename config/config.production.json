@@ -1,0 +1,5 @@
+{
+    "GOOGLE_CLIENT_ID":"your-google-client-id.apps.googleusercontent.com-prod",
+    "GOOGLE_CLIENT_SECRET":"your-google-client-secret-prod",
+    "SESSION_SECRET":"your-session-secret-prod"
+}
