@@ -3,7 +3,7 @@
 Google Login Service manages users profiles and user access.
 
 ## Environment Setup
-Use .gitignore to hide your produciton configurations
+Use .gitignore to hide production configurations and credentials
 
 ## Run Docker for Development
 
