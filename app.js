@@ -23,6 +23,10 @@ app.get('/', (req, res) => {
   res.render('home', { user: req.user });
 });
 
+app.get('/login', (req, res) => {
+  res.render('login', { user: req.user });
+});
+
 app.get("/debug", 
   function(req, res) {
 

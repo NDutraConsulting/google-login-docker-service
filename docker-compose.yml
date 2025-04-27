@@ -10,8 +10,6 @@ services:
       - DB_USER=postgres
       - DB_PASS=password
       - DB_NAME=oauth_db
-      - GOOGLE_CLIENT_ID=your_google_client_id_dockerConfig
-      - GOOGLE_CLIENT_SECRET=your_google_client_secret_dockerConfig
     depends_on:
       - db
 
